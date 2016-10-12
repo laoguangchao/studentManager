@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>学生管理修改页</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="framework/jquery-2.1.4/jquery.min.js"></script>
+    <script src="js/db.js"></script>
+    <script src="js/add.js"></script>
+    <script src="js/index.js"></script>
+    <script src="js/update.js"></script>
+</head>
+<body>
+<header>
+    <h1>学生信息修改</h1>
+</header>
+<article>
+    <section>
+        <form action="javascript:void(0)" id="updateForm">
+            <table class="tb2">
+                <tbody>
+                <tr>
+                    <td>姓名</td>
+                    <td><input name="name" type="text"></td>
+                </tr>
+                <tr>
+                    <td>性别</td>
+                    <td>
+                        <select name="gender" >
+                            <option>男</option>
+                            <option>女</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>年龄</td>
+                    <td><input name="age" type="number" min="1" max="30"></td>
+                </tr>
+                <tr>
+                    <td>地址</td>
+                    <td><input name="address" type="text"></td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <input type="submit" value="修改">
+                        <button><a href="student_list.html">取消</a></button>
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+        </form>
+    </section>
+
+</article>
+
+</body>
+</html>
